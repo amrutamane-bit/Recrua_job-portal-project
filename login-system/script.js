@@ -25,7 +25,7 @@ e.preventDefault();
 let email = document.getElementById("email").value;
 let password = document.getElementById("password").value;
 
-let response = await fetch("http://localhost:3000/login",{
+let response = await fetch("https://recrua-job-portal-project.onrender.com/login",{
 
 method:"POST",
 
@@ -90,7 +90,7 @@ localStorage.setItem("user", JSON.stringify(user));
 // SEND TO SERVER (MongoDB)
 try{
 
-await fetch("http://localhost:3000/signup",{
+await fetch("https://recrua-job-portal-project.onrender.com/signup",{
 
 method:"POST",
 headers:{
@@ -247,7 +247,7 @@ let user = localStorage.getItem("loggedInUser");
 
 try{
 
-await fetch("http://localhost:3000/apply",{
+await fetch("https://recrua-job-portal-project.onrender.com/apply",{
 
 method:"POST",
 
