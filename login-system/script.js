@@ -25,7 +25,7 @@ e.preventDefault();
 let email = document.getElementById("email").value;
 let password = document.getElementById("password").value;
 
-let response = await fetch("https://recrua-job-portal-project.onrender.com/login",{
+let response = await fetch("/login",{
 
 method:"POST",
 
@@ -48,7 +48,7 @@ localStorage.setItem("loggedInUser", email);
 
 alert("Login Successful!");
 
-window.location.href = "index.html";
+window.location.replace("index.html");
 
 }
 else{
@@ -90,7 +90,7 @@ localStorage.setItem("user", JSON.stringify(user));
 // SEND TO SERVER (MongoDB)
 try{
 
-await fetch("https://recrua-job-portal-project.onrender.com/signup",{
+await fetch("/signup",{
 
 method:"POST",
 headers:{
@@ -247,7 +247,7 @@ let user = localStorage.getItem("loggedInUser");
 
 try{
 
-await fetch("https://recrua-job-portal-project.onrender.com/apply",{
+await fetch("/apply",{
 
 method:"POST",
 
