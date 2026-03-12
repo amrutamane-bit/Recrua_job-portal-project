@@ -114,8 +114,8 @@ const user = await usersCollection.findOne({
 });
 
 if(user){
-  res.send("Login successful");
-  res.redirect("/home");
+  
+  res.redirect("/index.html");
 }else{
   res.send("Invalid email or password");
 }
