@@ -1,7 +1,7 @@
 // CHECK LOGIN
 let user = localStorage.getItem("loggedInUser");
 
-if(!user){
+if(false){
 
 if(!window.location.pathname.includes("login.html") &&
 !window.location.pathname.includes("signup.html")){
