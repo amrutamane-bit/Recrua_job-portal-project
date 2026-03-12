@@ -1,0 +1,79 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:url("images/loginbg.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.container{
+width:350px;
+padding:40px;
+border-radius:20px;
+
+background:rgba(83, 16, 16, 0.1);
+border:1px solid rgba(255,255,255,0.2);
+
+backdrop-filter:blur(15px);
+box-shadow:0 0 25px rgba(0,0,0,0.3);
+color:rgb(113, 86, 210);
+text-align:center;
+}
+
+.container h2{
+margin-bottom:25px;
+font-size:28px;
+}
+
+.input-box{
+margin:15px 0;
+}
+
+.input-box input{
+width:100%;
+padding:12px;
+border:none;
+outline:none;
+border-radius:20px;
+background:rgba(255,255,255,0.2);
+color:white;
+}
+
+.input-box input::placeholder{
+color:white;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:20px;
+background:white;
+color:black;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#ffd803;
+}
+
+p{
+margin-top:15px;
+}
+
+a{
+color:#ffd803;
+text-decoration:none;
+}

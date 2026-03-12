@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jobs - Recrua</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header>
+<h2>Recrua Job Portal</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="history.html">History</a>
+</nav>
+
+</header>
+
+<section class="jobs-section">
+
+<h2>Find Jobs</h2>
+
+<div class="filter">
+
+<select id="category">
+<option value="">Select Category</option>
+<option>Developer</option>
+<option>Designer</option>
+<option>Tester</option>
+<option>Sales</option>
+<option>Marketing</option>
+<option>HR</option>
+</select>
+
+<select id="location">
+<option value="">Select Location</option>
+<option>Pune</option>
+<option>Delhi</option>
+<option>Bangalore</option>
+<option>California</option>
+<option>Seoul</option>
+<option>Tokyo</option>
+<option>New York</option>
+<option>Paris</option>
+<option>Saudi</option>
+</select>
+
+<button onclick="searchJobs()">Search Jobs</button>
+
+</div>
+
+<div id="jobList" class="job-list"></div>
+
+</section>
+
+<!-- APPLY FORM -->
+
+<div id="applyFormContainer" class="apply-form" style="display:none;">
+
+<h3>Apply For Job</h3>
+
+<form id="applyForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<input type="file" id="resume" required>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recrua Job Portal</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Recrua</h1>
+
+<nav>
+<a href="index.html" onclick="showTab('home')">Home</a>
+<a href="jobs.html" onclick="showTab('jobs')">Jobs</a>
+<a href="history.html" onclick="showTab('history')">History</a>
+<a href="login.html">Login</a>
+<a href="#" onclick="logout()">Logout</a>
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+<section id="home" class="tab">
+
+<div class="hero">
+<h2>Find Your Dream Job</h2>
+<p>Explore opportunities around the world</p>
+</div>
+
+<div class="features">
+
+<div class="card">
+<img src="images/jobs.jpg">
+<div class="card-text">
+<h3>Global Jobs</h3>
+<p>Find jobs worldwide</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/apply.jpg">
+<div class="card-text">
+<h3>Easy Apply</h3>
+<p>Apply with one click</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/track.jpg">
+<div class="card-text">
+<h3>Secure Resume</h3>
+<p>Upload and manage resume</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- JOBS -->
+<section id="jobs" class="tab" style="display:none">
+
+<h2>Search Jobs</h2>
+
+<select id="category">
+<option>Developer</option>
+<option>Designer</option>
+<option>Tester</option>
+<option>Sales</option>
+<option>Marketing</option>
+</select>
+
+<select id="location">
+<option>Pune</option>
+<option>Delhi</option>
+<option>Bangalore</option>
+<option>California</option>
+<option>New York</option>
+<option>Tokyo</option>
+<option>Seoul</option>
+<option>Paris</option>
+<option>Saudi</option>
+</select>
+
+<button onclick="searchJobs()">Find Jobs</button>
+
+<div id="jobList"></div>
+
+</section>
+
+
+
+<!-- APPLY FORM -->
+<section id="applySection" style="display:none">
+
+<h2>Apply Job</h2>
+
+<form id="applyForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="text" placeholder="Phone" required>
+
+<input type="file" required>
+
+<button type="submit">Submit Application</button>
+
+</form>
+
+</section>
+
+
+<!-- HISTORY -->
+<section id="history" class="tab" style="display:none">
+
+<h2>Application History</h2>
+
+<ul id="historyList"></ul>
+
+</section>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
